@@ -9,7 +9,8 @@ console.log(`Processing URL ${GAS_API_URL}`);
 
 get(GAS_API_URL)
   .then((r) => {
-    writeFileSync(__dirname + "/../src/data.json", JSON.stringify(r.data), {
+    const context = `const data = ${JSON.stringify(r.data)};\n\nmodule.exports = data;`;
+    writeFileSync(__dirname + "/../src/data.js", context, {
       encoding: "utf8",
     });
 

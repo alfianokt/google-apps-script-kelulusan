@@ -1,5 +1,5 @@
 const polka = require("polka");
-const data = require('./data.json');
+const data = require('./data.js');
 
 const app = polka();
 
