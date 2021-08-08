@@ -1,8 +1,6 @@
 require('dotenv/config');
 const polka = require("polka");
-const { readFileSync } = require('fs')
-const { join } = require('path')
-const data = JSON.parse(readFileSync(join(__dirname, '_files', 'data.json'), 'utf8'));
+const data = require('./data.json');
 
 const app = polka();
 
