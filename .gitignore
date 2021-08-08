@@ -1,4 +1,3 @@
-api/_files
-!api/_files/.gitkeep
+api/data.json
 node_modules
 .env
