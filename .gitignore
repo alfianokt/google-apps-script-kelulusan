@@ -1,5 +1,4 @@
 api/data.json
 node_modules
-storage/*
-!storage/.gitkeep
 .env
+src/data.json
