@@ -1,6 +1,6 @@
 require('dotenv/config');
 const polka = require("polka");
-const data = require('./../src/data');
+const data = require('./data.json');
 
 const app = polka();
 
