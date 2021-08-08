@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "google-apps-script-kelulusan",
+  "description": "Sistem Informasi Kelulusan Siswa dengan Google App Script dan SpreadSheets",
+  "scripts": {
+    "fetch": "node src/fetch",
+    "run": "node src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfianokt/google-apps-script-kelulusan.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Alfian Oktafireza",
+    "url": "https://github.com/alfianokt"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfianokt/google-apps-script-kelulusan/issues"
+  },
+  "homepage": "https://github.com/alfianokt/google-apps-script-kelulusan#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "httpie": "^1.1.2",
+    "polka": "^0.5.2"
+  }
+}
