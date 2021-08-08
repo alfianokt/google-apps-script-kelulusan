@@ -1,11 +1,10 @@
 {
   "functions": {
     "api/index.js": {
-      "includeFiles": "public/_files/**"
+      "includeFiles": "_files/**"
     }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/_files/(.*)", "destination": "/public/_files" }
+    { "source": "/api/(.*)", "destination": "/api" }
   ]
 }
