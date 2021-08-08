@@ -6,7 +6,7 @@ const information = document.querySelector("#information");
 const elName = document.querySelector("#name");
 const elStatus = document.querySelector("#status");
 const reset = document.querySelector("#reset");
-const BASE_URL = "http://localhost:3000/";
+const BASE_URL = "https://google-apps-script-kelulusan.vercel.app/api/";
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
