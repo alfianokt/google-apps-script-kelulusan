@@ -3,7 +3,7 @@ const { readFileSync } = require("fs");
 let data = [];
 
 try {
-  const getData = readFileSync(__dirname + "/../storage/data.json", "utf8");
+  const getData = readFileSync("./storage/data.json", "utf8");
   data = JSON.parse(getData);
 } catch (error) {
   throw new Error("No data provide, please run `npm run fetch`");
