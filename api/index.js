@@ -4,7 +4,7 @@ const data = require('./data.json');
 
 const app = polka();
 
-app.get("/", (req, res) => {
+app.use((req, res) => {
   res.setHeader("content-type", "application/json");
   res.setHeader("access-control-allow-origin", "*");
   let [status, msg, resData] = [false, "Data berhasil didapatkan", []];
@@ -31,8 +31,5 @@ app.get("/", (req, res) => {
     })
   );
 });
-
-module.exports = app;
-
 
 module.exports = app;
