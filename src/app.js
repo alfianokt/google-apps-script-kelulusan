@@ -1,5 +1,6 @@
+require('dotenv/config');
 const polka = require("polka");
-const data = require('./data.js');
+const data = require(process.env.DATA_PATH || './data.js');
 
 const app = polka();
 
