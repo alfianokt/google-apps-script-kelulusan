@@ -1,6 +1,5 @@
 const polka = require("polka");
-const { readFileSync } = require("fs");
-const data = JSON.parse(readFileSync(__dirname + "/data.json", "utf8"));
+const data = require('./data.json');
 
 const app = polka();
 
