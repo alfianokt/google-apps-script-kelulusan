@@ -1,13 +1,6 @@
 const polka = require("polka");
 const { readFileSync } = require("fs");
-let data = [];
-
-try {
-  const getData = readFileSync(__dirname + "/data.json", "utf8");
-  data = JSON.parse(getData);
-} catch (error) {
-  throw new Error("No data provide, please run `npm run fetch`");
-}
+const data = JSON.parse(readFileSync(__dirname + "/data.json", "utf8"));
 
 const app = polka();
 
